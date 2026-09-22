@@ -1,0 +1,11 @@
+name:mri-heart
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.1
+  - numpy
+  - scipy
+  - nibabel
+  - opencv
+  - pyyaml

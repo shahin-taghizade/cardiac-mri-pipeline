@@ -1,0 +1,17 @@
+paths:
+  raw_nfti:"Tak02_Heart.tar"
+  output_mat:"octave/render_mesh.mat"
+  figures_dir:"results/figures"
+  reports_dir:"results/reports"
+
+preprocess:
+  intensity_min:0
+  intensity_max:255
+  threshold_value:120
+
+morphology:
+  kernel_shape:[3,3,3]
+
+visualization:
+  isovalue:0.5
+  path_color:[0.8,0.1,0.1]
