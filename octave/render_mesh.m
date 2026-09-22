@@ -6,6 +6,10 @@ isoval=0.5;
 
 [faces, vertices]=isosurface(isolated_mask,isoval);
 
+vertices(:,1)=vertices(:,1)*measurements(2);
+vertices(:,2)=vertices(:,2)*measurements(1);
+vertices(:,3)=vertices(:,3)*measurements(3);
+
 smooth_mask=isonormals(isolated_mask,vertices);
 
 figure;

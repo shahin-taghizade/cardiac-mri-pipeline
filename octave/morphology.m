@@ -3,7 +3,7 @@ pkg load image;
 data=load('cardiac_data.mat');
 
 volume=data.mri_volume;
-img=data.image;
+img=data.img;
 measurements=data.measurements;
 
 kernel_cube=ones(3,3,3);

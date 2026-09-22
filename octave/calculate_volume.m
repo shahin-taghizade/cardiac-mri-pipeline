@@ -9,3 +9,10 @@ active_voxels=sum(isolated_mask(:));
 voxel_volume=measurements(1)*measurements(2)*measurements(3); %mm^3
 total_volume=active_voxels*voxel_volume; %mm^3
 total_volume_cm=total_volume/1000; %cm^3
+
+disp('Active Voxels')
+disp(active_voxels)
+disp('Voxel volume')
+disp(voxel_volume)
+disp('Total volume mm^3')
+disp(total_volume)
